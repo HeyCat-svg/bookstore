@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="bookstore@localhost" uuid="74b01365-4734-433c-ac9b-ab3f6b5a6719">
+      <database-info product="MySQL" version="5.7.25-log" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.25" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="b89125c5-17c4-4bb3-be71-c61cac4a8c1a">
+      <database-info product="MySQL" version="5.7.25-log" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.25" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="bookstore" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="bookstore@localhost [2]" uuid="739766e1-0dfa-4b7c-ad82-2b204e8f783e">
+      <database-info product="Mongo DB" version="3.6.18" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.7.1" dbms="MONGO" exact-version="3.6.18" exact-driver-version="1.7" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="bookstore" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

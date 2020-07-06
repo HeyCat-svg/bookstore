@@ -1,0 +1,10 @@
+*.zip
+node_modules/
+out/
+lib/
+branch/
+branch/*
+target/
+android/app/build/*
+miniprogram_npm/
+/test/

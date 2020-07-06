@@ -1,0 +1,58 @@
+/* pages/bookDetail/bookDetail.wxss */
+.bookImage{
+    text-align: center;
+}
+
+image{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: visible;
+    padding: 10rpx;
+}
+
+.all-font{
+    font-family:"Microsoft YaHei";
+    line-height:12px;
+}
+
+.title{
+    font-size: 18px;
+    margin-left:35rpx;
+}
+
+.description{
+    font-size: 14px;
+    color: rgb(50,50,50);
+    margin:0 35rpx;
+    text-indent : -25rpx;
+    letter-spacing:1px;
+}
+
+.author{
+    font-size: 14px;
+    color: rgb(150, 150, 200);
+    margin-left:35rpx;
+}
+
+.price{
+    font-size:18x;
+    color:rgb(255,0,0);
+    float:left;
+    margin-left:35rpx;
+}
+
+.inventory{
+    float:right;
+    font-size: 14px;
+    color: rgb(150,150,150);
+    margin-right:35rpx;
+}
+
+.van-col--24{
+    margin:12rpx 0;
+}
+
+.descriTitle{
+    color: rgb(150, 150, 200);
+    font-size: 16px;
+    margin-left:35rpx;
+}

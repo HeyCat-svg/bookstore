@@ -1,0 +1,52 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view class="bookImage">
+    <van-row>
+        <van-col span="24">
+            <van-image width="13rem" height="13rem" fit="contain" src="{{book.bookImage.imageBase64}}" />
+        </van-col>
+    </van-row>
+</view>
+<view class="bookDetail" style="margin-top:30rpx;">
+    <van-row>
+        <van-col span="24">
+            <text class="title">{{book.name}}</text>
+        </van-col>
+    </van-row>
+    <van-row>
+        <van-col span="24">
+            <text class="price">￥{{book.price}}</text>
+            <text class="inventory" decode="{{true}}">库存:&nbsp;{{book.inventory}}</text>
+        </van-col>
+    </van-row>
+    <van-row>
+        <van-col span="24">
+            <text class="author">{{book.author}}</text>
+        </van-col>
+    </van-row>
+</view>
+<van-divider customStyle="margin:5rpx;"/>
+<view class="description">
+    <van-row>
+        <van-col span="24">
+            <text class="all-font descriTitle">书籍简介</text>
+        </van-col>
+    </van-row>
+    <van-row>
+        <van-col span="24">
+            <text class="description">{{book.description}}</text>
+        </van-col>
+    </van-row>
+</view>
+<view>
+    <van-goods-action>
+        <van-goods-action-icon icon="wap-home-o" text="主页" bind:click="toHome" />
+        <van-goods-action-icon icon="cart-o" text="购物车" bind:click="toCart" />
+        <van-goods-action-button
+            text="加入购物车"
+            type="warning"
+            bind:click="addCart"
+        />
+        <van-goods-action-button text="立即购买" bind:click="addOrder" />
+    </van-goods-action>
+</view>
+

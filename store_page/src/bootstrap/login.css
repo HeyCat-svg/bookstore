@@ -1,0 +1,33 @@
+#normal_login{
+    max-width: 300px;
+}
+
+#normal_login .login-form-forgot {
+    float: right;
+}
+#normal_login .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+#normal_login .login-form-button {
+    width: 100%;
+}
+
+#loginForm_container{
+    width:440px;
+    margin:240px 750px;
+    padding: 40px 70px 50px 70px;
+    background-color: rgba(255,255,255,0.75);
+    border:solid 1px white;
+}
+
+#login{
+    width:100%;
+    height:auto;
+    background-image: url("../resources/image/bgImage.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;    /*固定图片不动*/
+}
+
+#register{
+    padding-right: 80px;
+}

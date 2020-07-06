@@ -1,0 +1,87 @@
+<!--pages/cartPage/cartPage.wxml-->
+<text style="font-size:20px;margin-left:20rpx;">书籍</text>
+<view class="tableHeader">
+    <van-row>
+        <van-col span="2">
+            <van-checkbox value="{{selectAll}}" shape="square" bind:change="selectAll" style="float:right;"></van-checkbox>
+        </van-col>
+        <van-col span="6" offset="1">
+            <text class="all-font">全选</text>
+        </van-col>
+        <van-col span="15">
+            <text style="float:right;margin-right:10rpx;color:rgb(150,150,150);">共{{selectedRow.length}}件</text>
+        </van-col>
+    </van-row>
+    <van-divider customStyle="margin:5rpx;"/>
+</view>
+<view>
+    <block wx:for="{{cartList}}" wx:for-item="cartItem">
+        <van-row>
+            <van-col span="2">
+                <van-checkbox value="{{checked[index]}}" 
+                              shape="square" 
+                              bind:change="onChange" 
+                              data-id="{{index}}" 
+                              data-cartid="{{cartItem.id}}"
+                              data-price="{{cartItem.bookInfo.price}}"
+                              style="float:right;position:relative;top:60rpx;"
+                >
+                </van-checkbox>
+            </van-col>
+            <van-col span="6">
+                <van-image width="5rem" height="5rem" fit="contain" src="{{cartItem.bookInfo.bookImage.imageBase64}}" />
+            </van-col>
+            <van-col span="16">
+                <van-row>
+                    <van-col span="17">
+                        <van-row>
+                            <van-col span="24">
+                                <text class="all-font title" style="-webkit-line-clamp:1">
+                                    {{cartItem.bookInfo.name}}
+                                </text>
+                            </van-col>
+                        </van-row>
+                        <van-row>
+                            <van-col span="24">
+                                <text class="van-multi-ellipsis--l2 all-font description">{{cartItem.bookInfo.description}}</text>
+                            </van-col>
+                        </van-row>
+                    </van-col>
+                    <van-col span="7">
+                        <text class="all-font price">￥{{cartItem.bookInfo.price}}</text>
+                    </van-col>
+                </van-row>
+                <van-row>
+                    <van-col span="24">
+                        <van-stepper value="{{quantity[index]}}" 
+                                 bind:change="onQuantityChange"
+                                 data-id="{{index}}"
+                                 input-width="60rpx"
+                                 button-size="60rpx"
+                                 style="float:right; margin-right:20rpx;"
+                        />
+                    </van-col>
+                </van-row>
+            </van-col>
+        </van-row>
+        <van-divider customStyle="margin:5rpx;"/>
+    </block>
+</view>
+<view>
+    <van-submit-bar
+        price="{{ totalPrice*100 }}"
+        button-text="提交订单"
+        bind:submit="addOrder"
+    >
+        <van-tag type="primary">
+            <van-row>
+                <van-col span="10">
+                    <van-checkbox value="{{selectAll}}" shape="square" bind:change="selectAll"></van-checkbox>
+                </van-col>
+                <van-col span="14">
+                    <text style="flaot:right;">全选</text>
+                </van-col>
+            </van-row>
+        </van-tag>
+    </van-submit-bar>
+</view>

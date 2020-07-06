@@ -1,0 +1,13 @@
+<!--pages/orderComplete/orderComplete.wxml-->
+
+    
+<view style="text-align:center;margin-top:200rpx;">
+    <van-image width="5rem" height="5rem" fit="contain" src="/pages/assets/complete.png" />
+</view>
+<view style="margin-top:50rpx;text-align:center;">
+    <text style="font-size:60rpx;">购买成功</text>
+</view>
+<view style="margin-top:50rpx;text-align:center;">
+    <van-button plain type="primary" bindtap="goHome">返回主页</van-button>
+</view>
+

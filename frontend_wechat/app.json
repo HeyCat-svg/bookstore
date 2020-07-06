@@ -1,0 +1,34 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/mainPage/mainPage",
+        "pages/cartPage/cartPage",
+        "pages/orderComplete/orderComplete",
+        "pages/bookDetail/bookDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "BookStore",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-image": "@vant/weapp/image",
+        "van-search": "@vant/weapp/search",
+        "van-goods-action": "@vant/weapp/goods-action",
+        "van-goods-action-icon": "@vant/weapp/goods-action-icon",
+        "van-goods-action-button": "@vant/weapp/goods-action-button",
+        "van-overlay": "@vant/weapp/overlay",
+        "van-tabbar": "@vant/weapp/tabbar",
+        "van-tabbar-item": "@vant/weapp/tabbar-item",
+        "van-row": "@vant/weapp/row/index",
+        "van-col": "@vant/weapp/col/index",
+        "van-checkbox": "@vant/weapp/checkbox/index",
+        "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+        "van-submit-bar": "@vant/weapp/submit-bar/index",
+        "van-stepper": "@vant/weapp/stepper/index",
+        "van-divider": "@vant/weapp/divider/index"
+    }
+}

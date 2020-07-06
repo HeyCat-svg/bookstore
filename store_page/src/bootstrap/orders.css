@@ -1,0 +1,31 @@
+.orders{
+    width:1100px;
+    margin-left:360px;
+}
+
+.title{
+    font-size:16px;
+    color: black;
+}
+
+.author{
+    font-size:13px;
+    color:rgb(150,150,150);
+}
+
+.font{
+    font-size: 17px;
+}
+
+.header{
+    background-color:rgb(241,241,241);
+    height:35px;
+    padding:7px;
+    margin-bottom:5px;
+}
+
+.hintWord{
+    font-size:16px;
+    color:rgb(150,150,150);
+    margin-right:10px;
+}

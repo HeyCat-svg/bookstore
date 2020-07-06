@@ -1,0 +1,45 @@
+<!--pages/mainPage/mainPage.wxml-->
+<!--搜索栏-->
+<view class="searchBar">
+    <van-search value="{{searchText}}" placeholder="请输入书名" use-action-slot bind:change="onChange" bind:search="onSearch">
+    </van-search>
+</view>
+<!--滑块-->
+<view>
+    <cus-swiper imgUrls="{{carouselImgUrls}}"/>
+</view>
+<!--商品列表-->
+<view style="margin-top:10rpx">    
+    <block wx:for="{{bookList}}" wx:for-item="book">
+        <view bindtap="showDetail" data-id="{{book.id}}">
+        <van-row>
+            <van-col span="7">
+                <van-image bindtap="showDetail" data-book="{{book}}" width="5rem" height="5rem" fit="contain" src="{{book.bookImage.imageBase64}}" />
+            </van-col>
+            <van-col span="17">
+                <view style="maigin:10rpx 0;">
+                    <van-row>
+                        <van-col span="24">
+                            <text class="all-font title">{{book.name}}</text>
+                        </van-col>
+                    </van-row>
+                </view>
+                <view style="maigin:10rpx 0;">
+                    <text class="all-font description">{{book.description}}</text>
+                </view>
+                <view style="maigin:10rpx 0;">
+                    <van-row>
+                        <van-col span="24">
+                            <text class="all-font author">{{book.author}}</text>
+                            <text class="all-font price">￥{{book.price}}</text>
+                        </van-col>
+                    </van-row>
+                </view>  
+            </van-col>
+        </van-row>
+        </view>
+        <van-divider/>
+    </block>
+</view>
+<!--工具栏-->
+<tool-bar curActiveIndex="{{0}}"/>

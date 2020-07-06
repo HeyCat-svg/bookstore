@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    BookStore
+  </view>
+  <view class="login">
+    <van-field value="{{userName}}" label="用户名" placeholder="请输入用户名" bindblur="bindUsername" style="margin:20rpx 0"/>
+    <van-field value="{{password}}" label="密码" password="true" placeholder="请输入用户名"
+                bindblur="bindPassword" style="marigin:20rpx 0" error-message="{{errorMessage}}"/>
+  </view>
+  <view class="loginButton" style="width:500rpx; height:50rpx; margin:50rpx">
+    <van-button type="primary" bindtap="bindLogin" block>登陆</van-button>
+  </view>
+</view>

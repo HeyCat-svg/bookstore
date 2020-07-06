@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "cus-swiper": "../components/cusSwiper/cusSwiper",
+    "tool-bar": "../components/toolBar/toolBar",
+    "van-image": "@vant/weapp/image",
+    "van-divider": "@vant/weapp/divider/index"
+  }
+}
